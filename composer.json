@@ -1,0 +1,31 @@
+{
+    "name": "luan-tavares/phptips",
+    "description": "Aula do php tips",
+    "minimum-stability": "stable",
+    "authors": [{
+        "name": "Luan Tavares Lourenço",
+        "email": "luan.tavares.lourenco@gmail.com",
+        "role": "Developer"
+    }],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Core\\": "core/"
+        },
+        "files": [
+            "support/config.php",
+            "support/helpers.php"
+        ]
+    },
+    "require": {
+        "php": "^7.3",
+        "phpmailer/phpmailer": "^6.1",
+        "league/plates": "v4.0.0-alpha"
+    },
+    "require-dev": {
+        "mp091689/dump-die": "^1.0"
+    }
+}
